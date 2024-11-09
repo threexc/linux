@@ -194,7 +194,6 @@ static const struct regmap_config ad4695_regmap_config = {
 	.max_register = AD4695_REG_AS_SLOT(127),
 	.rd_table = &ad4695_regmap_rd_table,
 	.wr_table = &ad4695_regmap_wr_table,
-	.can_multi_write = true,
 };
 
 static const struct regmap_range ad4695_regmap16_rd_ranges[] = {
@@ -226,7 +225,6 @@ static const struct regmap_config ad4695_regmap16_config = {
 	.max_register = AD4695_REG_GAIN_IN(15),
 	.rd_table = &ad4695_regmap16_rd_table,
 	.wr_table = &ad4695_regmap16_wr_table,
-	.can_multi_write = true,
 };
 
 static const struct iio_chan_spec ad4695_channel_template = {
